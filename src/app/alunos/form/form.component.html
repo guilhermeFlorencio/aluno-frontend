@@ -1,0 +1,49 @@
+<form (ngSubmit)="saveAluno()">
+    <mat-form-field appearance="fill">
+      <mat-label>Nome</mat-label>
+      <input
+        matInput
+        [(ngModel)]="aluno.name" 
+        name="name" 
+        required
+        placeholder="Digite o nome"
+      />
+    </mat-form-field>
+  
+    <mat-form-field appearance="fill">
+      <mat-label>Email</mat-label>
+      <input
+        matInput
+        [(ngModel)]="aluno.email" 
+        name="email" 
+        type="email" 
+        required
+        placeholder="Digite o email"
+      />
+    </mat-form-field>
+  
+    <mat-form-field appearance="fill">
+      <mat-label>Data de Nascimento</mat-label>
+      <input
+        matInput
+        [(ngModel)]="aluno.data_nascimento" 
+        name="data_nascimento" 
+        type="date" 
+        required
+      />
+    </mat-form-field>
+  
+    <mat-form-field appearance="fill">
+      <mat-label>Senha</mat-label>
+      <input
+        matInput
+        [(ngModel)]="aluno.password" 
+        name="password" 
+        type="password"
+        placeholder="Digite a senha"
+      />
+    </mat-form-field>
+  
+    <button mat-raised-button color="primary" type="submit">Salvar</button>
+  </form>
+  
